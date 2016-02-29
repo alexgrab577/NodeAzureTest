@@ -14,5 +14,32 @@ block content
         li
             a(href="/contact") Contact us
   br
+  div#myCarousel.carousel.slide(data-interval='3000', data-ride='carousel')
+    ol.carousel-indicators
+      li.active(data-target='#myCarousel', data-slide-to=0)
+      li(data-target='#myCarousel', data-slide-to=1)
+      li(data-target='#myCarousel', data-slide-to=2)
+    div.carousel-inner
+      div.item.active
+        img.carouselSize.img-responsive(src="https://mycustomblob.blob.core.windows.net/testblobcontainerstorage/_MG_2767", alt="First Slide")
+        div.carousel-caption
+          h3 First Slide Label
+          p Lorem Ipsum dolor sit amet, cnsecuitir adipiscting elit.
+      div.item
+        img.img-responsive(src="https://mycustomblob.blob.core.windows.net/testblobcontainerstorage/_MG_4959", alt="Second Slide")
+        div.carousel-caption
+          h3 Second Slide Label
+          p Lorem Ipsum dolor sit amet, cnsecuitir adipiscting elit.
+      div.item
+        img.img-responsive(src="https://mycustomblob.blob.core.windows.net/testblobcontainerstorage/_MG_6138", alt="Third Slide")
+        div.carousel-caption
+          h3 Third Slide Label
+          p Lorem Ipsum dolor sit amet, cnsecuitir adipiscting elit.
+      a.carousel-control.left(href='#myCarousel' data-slide='prev')
+        span.glyphicon.glyphicon-chevron-left
+      a.carousel-control.right(href='#myCarousel' data-slide='next')
+        span.glyphicon.glyphicon-chevron-right
+           
+  
   div.jumbotron
     p This is place to put content. You can put slider, short description about your website and place some links for navigation.
