@@ -1,0 +1,13 @@
+.product{ background-color: rgba(119,136,153,0.1); padding: 15px; -moz-border-radius: 15px; border-radius: 15px;}
+.product p{ font-size: 14; color:Black; border-radius: 25px; opacity: 1.0 !Important;}
+
+.article { padding: 15px; background-color: rgba(119,136,153,0.1); border:rgba(119,136,153); -moz-border-radius: 15px; border-radius: 15px;}
+.article button{ position: relative; margin-left:200px; }
+/*.article p{ overflow: hidden; height: 50em;}*/
+
+body {background-color: pink;}
+
+.carousel img {
+  position: relative;
+  min-width: 100%;
+}

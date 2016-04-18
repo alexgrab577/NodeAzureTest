@@ -13,7 +13,7 @@ blobSvc.createContainerIfNotExists('testblobcontainerstorage', function(error, r
   }
 });
 
-var jsonList = ['_MG_2195', '_MG_2767','_MG_4959','_MG_5798','_MG_5834','_MG_6138'];
+var jsonList = ['Carousel1', 'Carousel2','Carousel3','Carousel4','Carousel5','Carousel6'];
 
 console.log(jsonList.length);
 for (var index = 0; index < jsonList.length; ++index) {

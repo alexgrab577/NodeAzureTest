@@ -1,46 +1,86 @@
 ﻿extends layout
 
 block content
-
-  h1= title
-  p Welcome to #{title}
   nav.navbar.navbar-inverse(role="navigation")
     ul.nav.navbar-nav.col-sm-12.col-xs-12
         li.active
             a(href="/") Home
                 span.sr-only (current)
         li
-            a(href="/about") About us
+            a(href="/Product") Product
         li
-            a(href="/contact") Contact us
-  br
-  div#myCarousel.carousel.slide.col-md-10.col-md-offset-1.col-sm-10.col-sm-offset-1.col-xs-10.col-xs-offset-1(data-interval='5000', data-ride='carousel')
+            a(href="/input") Input
+
+  div#myCarousel.carousel.slide(data-interval='8000', data-ride='carousel')
     ol.carousel-indicators
       li.active(data-target='#myCarousel', data-slide-to=0)
       li(data-target='#myCarousel', data-slide-to=1)
       li(data-target='#myCarousel', data-slide-to=2)
     div.carousel-inner
       div.item.active
-        img.carouselSize.img-responsive(src="https://mycustomblob.blob.core.windows.net/testblobcontainerstorage/_MG_2767", alt="First Slide")
+        img.carouselSize.img-responsive(src="https://mycustomblob.blob.core.windows.net/testblobcontainerstorage/Carousel1", alt="First Slide")
         div.carousel-caption
           h3 First Slide Label
           p Lorem Ipsum dolor sit amet, cnsecuitir adipiscting elit.
+          button(type="button" style='margin:10px').btn.btn-primary Article3
       div.item
        a(href='http://www.google.com')
-        img.img-responsive(src="https://mycustomblob.blob.core.windows.net/testblobcontainerstorage/_MG_4959", alt="Second Slide")
+        img.img-responsive(src="https://mycustomblob.blob.core.windows.net/testblobcontainerstorage/Carousel2", alt="Second Slide")
         div.carousel-caption
           h3 Second Slide Label
           p Lorem Ipsum dolor sit amet, cnsecuitir adipiscting elit.
       div.item
-        img.img-responsive(src="https://mycustomblob.blob.core.windows.net/testblobcontainerstorage/_MG_6138", alt="Third Slide")
+       a(href='www.cnn.com')
+        img.img-responsive(src="https://mycustomblob.blob.core.windows.net/testblobcontainerstorage/Carousel3", alt="Third Slide")
         div.carousel-caption
           h3 Third Slide Label
+          p Lorem Ipsum dolor sit amet, cnsecuitir adipiscting elit.      
+      div.item
+       a(href='http://www.google.com')
+        img.img-responsive(src="https://mycustomblob.blob.core.windows.net/testblobcontainerstorage/Carousel4", alt="Fourth Slide")
+        div.carousel-caption
+          h3 Fourth Slide Label
           p Lorem Ipsum dolor sit amet, cnsecuitir adipiscting elit.
+      div.item
+       a(href='http://finance.yahoo.com/')
+        img.img-responsive(src="https://mycustomblob.blob.core.windows.net/testblobcontainerstorage/Carousel5", alt="Fifth Slide")
+        div.carousel-caption
+          h3 Fifth Slide Label
+          p Lorem Ipsum dolor sit amet, cnsecuitir adipiscting elit.
+      div.item
+       a(href='www.netflix.com')
+        img.img-responsive(src="https://mycustomblob.blob.core.windows.net/testblobcontainerstorage/Carousel6", alt="Sixth Slide")
+        div.carousel-caption
+          h3 Sixth Slide Label
+          p Lorem Ipsum dolor sit amet, cnsecuitir adipiscting elit.          
       a.carousel-control.left(href='#myCarousel' data-slide='prev')
         span.glyphicon.glyphicon-chevron-left
       a.carousel-control.right(href='#myCarousel' data-slide='next')
         span.glyphicon.glyphicon-chevron-right
-           
-  
-  div.jumbotron.col-md-10.col-md-offset-1.col-sm-10.col-sm-offset-1.col-xs-10.col-xs-offset-1(style='margin-top:25px')
-    p This is place to put content. You can put slider, short description about your website and place some links for navigation.
+       
+
+  div.row.col-lg-10.col-lg-offset-1(style='margin-top:30px;')
+    div.main.col-lg-8
+     div.product
+      p Content. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum.
+      p Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum.
+      p Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum.
+      
+    div.main.col-lg-4
+     div.article.col-lg-12.col-lg-offset-1
+      h4 Title1
+      p Content for side. Content for side. Content for side. Content for side. Content for side. Content for side. Content for side. Content for side. Content for side. Content for side. Content for side. Content for side.
+      button(type="button").btn.btn-primary Article1
+     div.article.col-lg-12.col-lg-offset-1(style='margin-top:30px;')
+      h4 Title2
+      p Content for side. Content for side. Content for side. Content for side. Content for side. Content for side. Content for side. Content for side. Content for side. Content for side. Content for side. Content for side.
+      button(type="button").btn.btn-primary Article2
+     div.article.col-lg-12.col-lg-offset-1(style='margin-top:30px;')
+      h4 Title3
+      p Content for side. Content for side. Content for side. Content for side. Content for side. Content for side. Content for side. Content for side. Content for side. Content for side. Content for side. Content for side.
+      button(type="button").btn.btn-primary Article3
+     
+     
+  div.row.col-md-12.products
+    div.jumbotron.col-md-10.col-md-offset-1.col-sm-10.col-sm-offset-1.col-xs-10.col-xs-offset-1.col-lg-10.col-lg-offset-1(style='margin-top:25px')
+     p This is the footer content.
